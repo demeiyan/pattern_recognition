@@ -1,5 +1,0 @@
-X = rand(10, 5000) ;
-Q = X;
-kdtree = vl_kdtreebuild(X,'NumTrees',1);
-[index, distance] = vl_kdtreequery(kdtree, X, X, 'NumNeighbors',2,'MaxComparisons', 6000) ;
-
