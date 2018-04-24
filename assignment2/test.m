@@ -1,3 +1,4 @@
+rand('seed',0);
 X = rand(10, 5000) ;
 kdtree = vl_kdtreebuild(X,'NumTrees',1);
 Q = X;
