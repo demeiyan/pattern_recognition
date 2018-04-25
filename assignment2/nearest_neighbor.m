@@ -1,7 +1,7 @@
 rand('seed',0);
 x = rand(5000,10);
 distance = zeros(5000,5000);
-indices = zeros(5000,1,'int32');
+indices = zeros(5000,1,'uint32');
 tic
 for i=1:5000
     distance(i,:) = sum((x - x(i,:)).^2,2);
@@ -13,4 +13,3 @@ for i=1:5000
 end
 toc
 disp(['time : ',num2str(toc)]);
-        
